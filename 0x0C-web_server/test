@@ -1,0 +1,5 @@
+#!/bin/bash
+sed -i '/root \/var\/www\/my_website;/a\
+	location /redirect_me {\
+    it worked;\
+}' /etc/nginx/sites-available/my_website
