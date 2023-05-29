@@ -22,8 +22,8 @@ if __name__ == "__main__":
         if todo['completed']:
             completed += 1
             titles.append(todo['title'])
-    result = f"Employee {users['name']} is done with tasks\
-                    ({completed}/{total_task})"
+    result = f"Employee {users['name']} is done with tasks(\
+{completed}/{total_task})"
     print(result)
     for title in titles:
         print(f"\t {title}")
