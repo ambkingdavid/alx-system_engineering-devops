@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+    Query reddit
+"""
 import requests
 
 
