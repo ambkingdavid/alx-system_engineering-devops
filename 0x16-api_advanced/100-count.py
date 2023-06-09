@@ -20,8 +20,7 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
         results = response.json()
         if response.status_code == 404:
             raise Exception
-    except Exception:
-        print("")
+    except Exception as e:
         return
 
     results = results.get("data")
